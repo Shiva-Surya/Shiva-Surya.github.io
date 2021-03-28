@@ -1,0 +1,335 @@
+*{box-sizing: border-box}
+body{ 
+	background-image: url('images/HOF_BG.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Brush Script MT', cursive; margin:0
+	.mySlides {display: none}
+	img {vertical-align: middle;}
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.fade {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 1.5s;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+
+  
+.dropbtn {
+	background-color: #555;
+  color: #FDFEFE ;
+  padding: 5px 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  border-right: 4px solid #873600;
+  border-bottom: 4px solid #873600;
+  box-shadow: 0 0 10px 0 #000;  
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  margin-top:10vh;
+  margin-left:30vh;
+  float:center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 100px;
+  border-radius: 5px;
+  border-right: 4px solid #873600;
+  border-bottom: 4px solid #873600;
+  box-shadow: 0 0 10px 0 #000;
+  color: #FDFEFE;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #2b2b2b;
+	color: #FDFEFE;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {
+	background-color: #6b6b6b;
+	color: #FDFEFE;
+}
+
+
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	text-align:center;
+  }
+  
+  hr {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  
+ #Sidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -150px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 180px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#Sidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#warden {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#gsec {
+  top: 80px;
+  background-color: #f44336; /* Red */
+}
+
+
+#contact {
+  top: 140px;
+  background-color: #555 /* Light Black */
+}
+
+
+
+
+/*Profile Card*/
+.sportscard {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-image: linear-gradient(to bottom right, #eb3349 ,#f45c43);
+  width: 100%;
+  position: relative;
+  margin-top:10vh;
+  margin-left:20vh;
+  float:center;
+  font-family: 'Times New Roman', serif;
+  color : white;
+}
+.sportscard:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  background-image: linear-gradient(to bottom right, #000428 ,#004e92);
+}
+.tccard {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-image: linear-gradient(to bottom right, #43cea2 ,#185a9d);
+  width: 100%;
+  position: relative;
+  margin-top:10vh;
+  margin-left:20vh;
+  float:center;
+  font-family: 'Times New Roman', serif;
+  color : white;
+}
+.tccard:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  background-image: linear-gradient(to bottom right, #000428 ,#004e92);
+}
+.soccard {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-image: linear-gradient(to bottom right, #cc2b5e ,#753a88);
+  width: 100%;
+  position: relative;
+  margin-top:10vh;
+  margin-left:20vh;
+  float:center;
+  font-family: 'Times New Roman', serif;
+  color : white;
+}
+.soccard:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  background-image: linear-gradient(to bottom right, #000428 ,#004e92);
+}
+.student {
+	font-size:24px;
+}
+.title {
+  
+  font-size: 20px;
+}
+
+.headings{
+	margin: auto;
+  text-align: Left;
+  position: relative;
+  margin-top:10vh;
+  margin-bottom :10vh;
+  font-family: 'Times New Roman', serif;
+  	font-size:50px;
+background-color: #555;
+  color: #FDFEFE ;
+  padding: 5px 50px;
+  border-radius: 10px;
+  border-right: 4px solid #873600;
+  border-bottom: 4px solid #873600;
+  box-shadow: 0 0 10px 0 #000;  
+  
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-image: linear-gradient(to bottom right, #614385 , #516395);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-image: linear-gradient(to bottom right, #56ab2f , #a8e063); /* Add a dark-grey background on hover */
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 24px;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table th{
+	background-color:  #02aab0;
+    text-align: left;
+	padding: 12px 15px;
+}
+.styled-table td {
+    padding: 12px 15px;
+	border-bottom: 1px solid #dddddd;
+	background-color: #d6ae7b;
+	border=1;
+}
+
+	
+
+/*Table for General Secreteries */
+
+.ggs {
+  border-collapse: collapse;
+    font-size: 24px;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+
+.ggs th{
+	background-color: #42275a ;
+    color: #ffffff;
+  	padding: 12px 15px;
+	text-align: center;
+}
+.ggs td{
+	background-color: #2c3e50 ;
+    color: #ffffff;
+  	padding: 12px 15px;
+	text-align: center;
+}
+
+.ggs td:hover {
+	background-color: #000428 ;
+	font-weight:bold;
+    color: #ffffff;
+  	padding: 12px 15px;
+	text-align: center;
+	transform: scale(1.1);
+}
+
