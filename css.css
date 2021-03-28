@@ -20,9 +20,11 @@ html {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 80%;
   position: relative;
   margin: auto;
+  margin-left:10vh;
+  margin-right:10vh;
 }
 
 /* Next & previous buttons */
